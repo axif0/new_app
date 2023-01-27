@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackgroundBorderless" app:cardBackgroundColor="@color/colorCardsDialogs" app:cardCornerRadius="@dimen/dimen_margin_10dp" app:cardElevation="@dimen/dimen_margin_10dp" app:cardUseCompatPadding="false">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/standard_padding_8dp">
+        <ImageView android:id="@+id/imv_item_icon" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:adjustViewBounds="true" android:alpha="0.8" app:srcCompat="@drawable/ic_logo_white"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="60dp" android:layout_weight="1">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="20sp" android:layout_gravity="start" android:id="@+id/tv_item_title" android:paddingTop="@dimen/dimen_margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Make Shown Here" android:paddingStart="@dimen/dimen_margin_10dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="16sp" android:textColor="@color/colorSubtitle" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/tv_action_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Condition shown here" android:paddingEnd="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

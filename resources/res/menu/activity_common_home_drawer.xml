@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/group_top" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_user_login" android:id="@+id/nav_common_user_access" android:title="@string/text_user_login"/>
+        <item android:icon="@drawable/ic_feedback" android:id="@+id/nav_common_feedback" android:title="@string/text_feedback"/>
+    </group>
+    <group android:id="@+id/group_middle1" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_announcement" android:id="@+id/nav_common_announcements" android:title="@string/text_announcements"/>
+        <item android:icon="@drawable/ic_news" android:id="@+id/nav_common_news" android:title="@string/text_news"/>
+        <item android:icon="@drawable/ic_event" android:id="@+id/nav_common_events" android:title="@string/text_events"/>
+        <item android:icon="@drawable/ic_admission" android:id="@+id/nav_common_admissions" android:title="@string/text_admissions"/>
+        <item android:icon="@drawable/ic_calendar" android:id="@+id/nav_common_calendar" android:title="@string/text_calendar"/>
+    </group>
+    <group android:id="@+id/group_middle2" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_library" android:id="@+id/nav_common_library" android:title="@string/text_library"/>
+        <item android:icon="@drawable/ic_social_media" android:id="@+id/nav_common_social" android:title="@string/social"/>
+        <item android:icon="@drawable/ic_location" android:id="@+id/nav_common_location_map" android:title="@string/text_location_map"/>
+        <item android:icon="@drawable/ic_contact" android:id="@+id/nav_common_contacts" android:title="@string/text_contacts"/>
+        <item android:icon="@drawable/ic_link" android:id="@+id/nav_common_links" android:title="@string/text_links"/>
+        <item android:icon="@drawable/ic_lms" android:id="@+id/nav_common_lms" android:title="@string/text_lms"/>
+        <item android:icon="@drawable/ic_dspace" android:id="@+id/nav_common_dspace" android:title="@string/text_dspace"/>
+    </group>
+    <group android:id="@+id/group_middle3" android:checkableBehavior="none">
+        <item android:icon="@drawable/ic_photo" android:id="@+id/nav_common_photos" android:title="@string/text_photos"/>
+        <item android:icon="@drawable/ic_video" android:id="@+id/nav_common_videos" android:title="@string/text_videos"/>
+        <item android:icon="@drawable/ic_cafe" android:id="@+id/nav_common_cafeteria" android:title="@string/text_cafeteria"/>
+        <item android:icon="@drawable/ic_play" android:id="@+id/nav_common_bracu_anthem" android:visible="false" android:title="@string/bracu_anthem"/>
+        <item android:icon="@drawable/ic_qr" android:id="@+id/nav_common_qr_reader" android:visible="false" android:title="@string/qr_reader"/>
+        <item android:icon="@drawable/ic_web" android:id="@+id/nav_common_full_website" android:title="@string/text_full_website"/>
+        <item android:icon="@drawable/ic_about" android:id="@+id/nav_common_about" android:title="@string/text_about"/>
+    </group>
+    <group android:id="@+id/group_bottom" android:checkableBehavior="none">
+        <item android:icon="@drawable/ic_settings" android:id="@+id/nav_common_settings" android:title="@string/action_settings"/>
+    </group>
+</menu>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/theme_background_gradient" android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridView android:gravity="center" android:id="@+id/gv_gallery" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:drawSelectorOnTop="true" android:verticalSpacing="5dp" android:stretchMode="columnWidth" android:columnWidth="100dp" android:numColumns="auto_fit"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <FrameLayout android:id="@+id/student_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <academia.bracu.com.academia.boommenu.BoomMenuButton android:id="@+id/bmb_student_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/dimen_30dp" android:layout_alignParentEnd="true" app:bmb_buttonEnum="1" app:bmb_buttonPlaceEnum="32" app:bmb_normalColor="@color/colorCardsDialogs" app:bmb_pieceCornerRadius="2dp" app:bmb_piecePlaceEnum="32"/>
+</RelativeLayout>

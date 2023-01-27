@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorCardsDialogs" app:cardCornerRadius="@dimen/dimen_margin_10dp" app:cardElevation="@dimen/dimen_margin_10dp" app:cardUseCompatPadding="false">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:paddingStart="@dimen/standard_padding_8dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="60dp" android:layout_weight="1">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="@dimen/text_size_17sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/course"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_course_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2dp" android:text="MTA201"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="60dp" android:layout_weight="1">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="@dimen/text_size_17sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_credit"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_course_credit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2dp" android:text="3.00"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="?attr/selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/standard_padding_8dp">
+    <ImageView android:id="@+id/imv_item_icon" android:background="@drawable/ic_image_placeholder" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:adjustViewBounds="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="60dp" android:layout_weight="1">
+        <TextView android:textColor="@color/colorRegularText" android:layout_gravity="start" android:id="@+id/tv_item_title" android:paddingTop="@dimen/dimen_margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Make Shown Here" android:paddingStart="@dimen/dimen_margin_10dp"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/colorSubtitle" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/tv_action_description" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Condition shown here" android:paddingEnd="5dp"/>
+    </LinearLayout>
+</LinearLayout>

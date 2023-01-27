@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/theme_background_gradient" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top_layout" android:paddingTop="@dimen/standard_padding_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/standard_padding_8dp" android:paddingEnd="@dimen/standard_padding_8dp">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:id="@+id/addressTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/university_address"/>
+        <TextView android:textSize="15sp" android:id="@+id/addressLine1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/address_66_mohakhali"/>
+        <TextView android:textSize="15sp" android:id="@+id/addressLine2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/address_dhaka_1212"/>
+        <TextView android:textSize="15sp" android:id="@+id/addressLine3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bangladesh"/>
+        <View android:background="@color/colorListDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <ListView android:id="@+id/lv_contact_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/colorListDivider" android:layout_below="@+id/ll_top_layout"/>
+</RelativeLayout>

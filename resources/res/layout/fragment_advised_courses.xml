@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/theme_background_gradient" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <TextView android:textSize="@dimen/text_size_21sp" android:gravity="center" android:id="@+id/tv_unavailable_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_advised_courses_available"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_advised_courses_info" android:paddingTop="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/dimens_60dp" android:layout_below="@+id/tv_unavailable_message" android:paddingStart="0dp">
+        <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_semester_name_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_session"/>
+        <ListView android:id="@+id/lv_advised_courses" android:background="@android:color/transparent" android:padding="@dimen/dimens_50dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="10dp" android:minHeight="@dimen/dimen_100dp" style="@style/Widget.AppCompat.ButtonBar.AlertDialog"/>
+    </LinearLayout>
+</RelativeLayout>

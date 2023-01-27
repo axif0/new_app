@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="center" android:id="@+id/tv_course_code" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/earned" android:layout_weight="1"/>
+    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_course_attempted" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/earned" android:layout_weight="1"/>
+    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_course_earned" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/earned" android:layout_weight="1"/>
+    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_course_grade" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/earned" android:layout_weight="1"/>
+    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_course_gpa" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/earned" android:layout_weight="1"/>
+</LinearLayout>

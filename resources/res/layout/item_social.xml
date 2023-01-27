@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/info" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" android:paddingStart="0dp" android:layout_alignParentStart="true">
+        <TableLayout android:id="@+id/socialOthers" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/others" android:layout_width="30dp" android:layout_height="match_parent" android:paddingStart="10dp"/>
+                <TextView android:textColor="#000000" android:layout_gravity="center" android:id="@+id/story" android:layout_width="300dp" android:layout_height="match_parent" android:layout_column="1" android:text="story" android:paddingStart="10dp"/>
+                <ImageView android:id="@+id/msgbox" android:layout_width="30dp" android:layout_height="match_parent" android:paddingStart="10dp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

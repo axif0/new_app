@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#303030</color>
+    <color name="colorButtonBackground">#424242</color>
+    <color name="colorCardsDialogs">#424242</color>
+    <color name="colorListDivider">#1fffffff</color>
+    <color name="colorRegularIcon">#ffffff</color>
+    <color name="colorRegularText">#ffffff</color>
+    <color name="colorRegularTextHint">#80ffffff</color>
+    <color name="colorSplashThemeBackground">#fafafa</color>
+    <color name="colorSubtitle">#80ffffff</color>
+</resources>

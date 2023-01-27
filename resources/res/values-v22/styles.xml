@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Light">
+        <item name="android:textViewStyle">@style/RegularTextViewStyle</item>
+        <item name="?0x101058c">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.Light.IgnoreOverrideForceDarkOption">
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="Base.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.V22.Theme.AppCompat">
+        <item name="actionModeShareDrawable">?android:attr/actionModeShareDrawable</item>
+        <item name="editTextBackground">?android:attr/editTextBackground</item>
+    </style>
+    <style name="Base.V22.Theme.AppCompat.Light">
+        <item name="actionModeShareDrawable">?android:attr/actionModeShareDrawable</item>
+        <item name="editTextBackground">?android:attr/editTextBackground</item>
+    </style>
+</resources>

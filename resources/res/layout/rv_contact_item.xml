@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimens_60dp">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/standard_padding_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="15sp" android:textStyle="bold" android:id="@+id/tv_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/academic_record"/>
+            <TextView android:textSize="15sp" android:textColor="@color/colorSubtitle" android:id="@+id/tv_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:text="@string/sample_phone_number"/>
+            <TextView android:textSize="15sp" android:textColor="@color/colorSubtitle" android:id="@+id/tv_email_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:text="@string/address_info_bracu_ac_bd"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imv_call" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/dimen_4dp" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" android:contentDescription="@string/call" app:srcCompat="@drawable/ic_phone"/>
+            <ImageView android:id="@+id/imv_email" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/dimen_4dp" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" android:contentDescription="@string/e_mail" app:srcCompat="@drawable/ic_email"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/colorListDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/semesterDetail" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="0dp">
+    <TextView android:textSize="14sp" android:textColor="#000000" android:layout_gravity="center" android:id="@+id/courseSemester" android:layout_width="40dp" android:layout_height="20dp" android:layout_marginLeft="0dp" android:layout_column="1" android:paddingStart="0dp"/>
+    <TextView android:textSize="14sp" android:textColor="#000000" android:layout_gravity="center" android:id="@+id/creditAttempted" android:layout_width="45dp" android:layout_height="20dp" android:layout_marginLeft="0dp" android:layout_column="1" android:paddingStart="2dp"/>
+    <TextView android:textSize="14sp" android:textColor="#000000" android:layout_gravity="center" android:id="@+id/creditEarned" android:layout_width="40dp" android:layout_height="20dp" android:layout_marginLeft="0dp" android:layout_column="1" android:paddingStart="2dp"/>
+    <TextView android:textSize="14sp" android:textColor="#000000" android:layout_gravity="center" android:id="@+id/grade" android:layout_width="40dp" android:layout_height="20dp" android:layout_marginLeft="0dp" android:layout_column="1" android:paddingStart="2dp"/>
+    <TextView android:textSize="14sp" android:textColor="#000000" android:layout_gravity="center" android:id="@+id/gradePoint" android:layout_width="40dp" android:layout_height="20dp" android:layout_marginLeft="0dp" android:layout_column="1" android:paddingStart="2dp"/>
+</TableRow>

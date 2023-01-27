@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/warning_dialog_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="300dp" android:minHeight="@dimen/dimen_150dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/dimen_margin_10dp" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textColor="@color/colorRegularText" android:id="@+id/tv_warning_title" android:paddingBottom="@dimen/dimen_20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_message_sent" style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"/>
+        <TextView android:textColor="@color/colorRegularText" android:id="@+id/tv_warning_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_message_sent"/>
+    </LinearLayout>
+    <View android:background="@color/colorListDivider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="@dimen/text_size_19" android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/tv_action_ok" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimen_100dp" android:text="@string/action_ok" android:textAllCaps="true" style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"/>
+</LinearLayout>

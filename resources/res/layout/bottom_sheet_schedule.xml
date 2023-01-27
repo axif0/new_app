@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorCardsDialogs" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imv_action_close" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/ic_close_white"/>
+        <TextView android:textSize="18sp" android:textColor="@color/colorRegularText" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/tv_day_name" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/name_sample" android:layout_weight="1" android:paddingStart="@dimen/standard_padding_8dp" android:paddingEnd="@dimen/standard_padding_8dp"/>
+    </LinearLayout>
+    <View android:background="@color/colorListDivider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/lv_schedule_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/colorListDivider" android:dividerHeight="@dimen/dimens_5dp"/>
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

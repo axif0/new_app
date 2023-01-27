@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/cv_item_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimens_60dp" app:cardBackgroundColor="@color/colorCardsDialogs" app:cardCornerRadius="5dp" app:cardElevation="5dp" app:cardUseCompatPadding="false">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_item_parent" android:padding="@dimen/dimen_margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/tv_session_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fall 2019" style="@style/TitleTVStyleBold"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_result_cell" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/colorListDivider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="6dp" android:paddingEnd="5dp">
+            <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_30dp" android:paddingEnd="@dimen/dimens_5dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" android:textSize="@dimen/text_size_13" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/semester" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" android:textSize="@dimen/text_size_13" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cumulative" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:textSize="@dimen/text_size_13" android:background="@color/color_white_100" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="-2dp" android:layout_marginBottom="-2dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/rv_horizontal_divider_gray" android:minHeight="@dimen/dimen_30dp" android:showDividers="middle" android:paddingStart="@dimen/dimens_5dp">
+                    <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/attempted" android:layout_weight="1"/>
+                    <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/earned" android:layout_weight="1"/>
+                    <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/text_gpa" android:layout_weight="1"/>
+                </LinearLayout>
+                <View android:textSize="@dimen/text_size_13" android:background="@color/colorListDivider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="-2dp" android:layout_marginBottom="-2dp"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_30dp" android:paddingStart="@dimen/dimens_5dp">
+                    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_semester_attempted" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/attempted" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_semester_earned" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/earned" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_semester_gpa" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/text_gpa" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_30dp" android:paddingStart="@dimen/dimens_5dp">
+                    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_cumulative_attempted" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/attempted" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_cumulative_earned" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/earned" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/colorSubtitle" android:gravity="center" android:id="@+id/tv_cumulative_gpa" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/text_gpa" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

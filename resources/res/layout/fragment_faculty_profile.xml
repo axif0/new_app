@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/theme_background_gradient" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_21sp" android:gravity="center" android:id="@+id/tv_unavailable_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_data_found"/>
+    <ScrollView android:id="@+id/sv_profile_info" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tv_unavailable_message">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.github.florent37.shapeofview.shapes.DiagonalView android:id="@+id/diagonalLayout" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="266dp" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:shape_diagonal_angle="10" app:shape_diagonal_position="1">
+                <com.flaviofaria.kenburnsview.KenBurnsView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bracu" android:scaleType="centerCrop"/>
+                <LinearLayout android:orientation="vertical" android:background="#9530302d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="105dp" android:layout_marginStart="30dp">
+                    <TextView android:textSize="25sp" android:textColor="@color/color_white_100" android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/tv_full_name" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Faculty Name" android:layout_marginStart="0dp"/>
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_white_100" android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/tv_department" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Department" android:layout_marginStart="2dp"/>
+                </LinearLayout>
+            </com.github.florent37.shapeofview.shapes.DiagonalView>
+            <com.github.florent37.shapeofview.shapes.CircleView android:id="@+id/avatar" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="190dp" android:layout_marginStart="40dp">
+                <ImageView android:background="@drawable/diagonallayout_circle" android:layout_width="match_parent" android:layout_height="match_parent" app:srcCompat="@drawable/ic_faculty_black"/>
+            </com.github.florent37.shapeofview.shapes.CircleView>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="230dp" android:weightSum="4">
+                <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="300dp" android:weightSum="4">
+                <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/relativeLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15sp" android:textStyle="bold" android:layout_gravity="center" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="30dp" android:minWidth="100dp" android:text="Short Name" android:paddingStart="5dp"/>
+                        <TextView android:textSize="15sp" android:textColor="@color/colorSubtitle" android:layout_gravity="center" android:id="@+id/tv_short_name" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/name_sample"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15sp" android:textStyle="bold" android:layout_gravity="center" android:id="@+id/profileEmail3" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="30dp" android:minWidth="100dp" android:text="Email" android:paddingStart="5dp"/>
+                        <TextView android:textSize="15sp" android:textColor="@color/colorSubtitle" android:layout_gravity="center" android:id="@+id/tv_email" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="Email"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15sp" android:textStyle="bold" android:layout_gravity="center" android:id="@+id/profileNumber2" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="30dp" android:minWidth="100dp" android:text="Mobile No." android:paddingStart="5dp"/>
+                        <TextView android:textSize="15sp" android:textColor="@color/colorSubtitle" android:layout_gravity="center" android:id="@+id/tv_mobile" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="Mobile No."/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

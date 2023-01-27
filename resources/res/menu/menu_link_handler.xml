@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_more_vert_white" android:id="@+id/action_more" android:title="" app:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/ic_content_copy" android:id="@+id/action_copy_link" android:orderInCategory="100" android:title="@string/copy_link" app:showAsAction="ifRoom"/>
+            <item android:icon="@drawable/ic_open_in_browser_black" android:id="@+id/action_open_with" android:orderInCategory="100" android:title="@string/open_with" app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+</menu>

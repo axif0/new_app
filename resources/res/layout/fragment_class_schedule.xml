@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/theme_background_gradient" android:padding="@dimen/standard_padding_8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_21sp" android:gravity="center" android:id="@+id/tv_unavailable_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_data_found"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_class_schedule" android:background="@color/colorBackground" android:paddingBottom="@dimen/dimens_60dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tv_unavailable_message" android:paddingStart="@dimen/dimens_5dp" android:paddingEnd="@dimen/dimens_5dp" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</RelativeLayout>

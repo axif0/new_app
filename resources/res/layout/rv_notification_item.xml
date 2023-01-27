@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_item_parent" android:background="?android:attr/selectableItemBackground" android:padding="@dimen/standard_padding_8dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimens_60dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textAppearance="?android:attr/textAppearanceSearchResultTitle" android:id="@+id/tv_notification_title" android:paddingBottom="@dimen/dimens_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Large Text" android:paddingStart="5dp"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" android:textColor="@color/colorSubtitle" android:ellipsize="end" android:id="@+id/tv_notification_message" android:paddingBottom="@dimen/dimens_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Medium Text" android:maxLines="1" android:paddingStart="5dp" android:paddingEnd="@dimen/standard_padding_8dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/imv_right_arrow" android:layout_width="20dp" android:layout_height="32dp" app:srcCompat="@drawable/ic_arrow_right"/>
+</LinearLayout>

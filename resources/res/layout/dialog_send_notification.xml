@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/colorRegularText" android:gravity="center" android:id="@+id/tv_dialog_title" android:paddingBottom="@dimen/dimen_20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send_notification_title" style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"/>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatCheckBox android:textColor="@color/colorRegularText" android:id="@+id/cb_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/text_sms" android:layout_marginEnd="@dimen/standard_padding_8dp"/>
+        <androidx.appcompat.widget.AppCompatCheckBox android:textColor="@color/colorRegularText" android:id="@+id/cb_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_notification" android:layout_marginEnd="@dimen/dimens_5dp"/>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/til_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_notification_subject" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/et_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimens_50dp" android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/til_notification_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_margin_10dp" android:hint="@string/notification_message" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/et_notification_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_150dp" android:inputType="none|text|textCapSentences|textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="end" android:id="@+id/btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_padding_8dp" android:minWidth="@dimen/dimen_100dp" android:text="@string/text_cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:layout_gravity="end" android:id="@+id/btn_send_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_padding_8dp" android:minWidth="@dimen/dimen_100dp" android:text="@string/text_send" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

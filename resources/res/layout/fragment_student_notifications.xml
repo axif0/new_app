@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/theme_background_gradient" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/info" android:paddingTop="@dimen/dimen_margin_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ll_pagination" android:layout_alignParentTop="true" android:paddingStart="0dp" android:layout_alignParentStart="true">
+        <TextView android:textSize="@dimen/text_size_21sp" android:gravity="center" android:id="@+id/tv_unavailable_message" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_messages_available_for_you"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_notifications" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll_pagination" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/btn_navigate_prev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navigation_prev" android:layout_weight="1"/>
+        <Button android:id="@+id/btn_navigate_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navigation_next" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

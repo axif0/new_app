@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/warning_dialog_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="300dp" android:minHeight="140dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/dimen_margin_10dp" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textColor="@color/colorRegularText" android:id="@+id/tv_warning_title" android:paddingBottom="@dimen/dimen_20dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_message_sent" style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"/>
+        <TextView android:textColor="@color/colorRegularText" android:id="@+id/tv_warning_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_message_sent" style="@style/TextAppearance.AppCompat.Body1"/>
+    </LinearLayout>
+    <View android:background="@color/colorListDivider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_20dp" android:layout_marginEnd="@dimen/dimen_20dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_cancel_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/text_size_19" android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/tv_action_cancel" android:focusable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/text_cancel" android:layout_weight="1" android:textAllCaps="true" style="@style/Widget.AppCompat.Button.Borderless"/>
+            <View android:background="@color/colorListDivider" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_19" android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/tv_action_ok" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_ok" android:layout_weight="1" android:textAllCaps="true" style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorBackground" android:padding="@dimen/standard_padding_8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:background="@drawable/rounded_background_spinner" android:padding="@dimen/dimens_5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimens_120dp" android:text="@string/academic_year"/>
+            <ProgressBar android:id="@+id/pb_academic_year" android:visibility="invisible" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp"/>
+            <academia.bracu.com.academia.spinner.SearchableSpinner android:gravity="center" android:id="@+id/sp_academic_year" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@drawable/rounded_background_spinner" android:padding="@dimen/dimens_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_5dp">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimens_120dp" android:text="@string/academic_session"/>
+            <ProgressBar android:id="@+id/pb_academic_session" android:visibility="invisible" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp"/>
+            <academia.bracu.com.academia.spinner.SearchableSpinner android:gravity="center" android:id="@+id/sp_academic_session" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@drawable/rounded_background_spinner" android:padding="@dimen/dimens_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_5dp">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimens_120dp" android:text="@string/course_code"/>
+            <ProgressBar android:id="@+id/pb_academic_course" android:visibility="invisible" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp"/>
+            <academia.bracu.com.academia.spinner.SearchableSpinner android:gravity="center" android:id="@+id/sp_academic_course" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@drawable/rounded_background_spinner" android:padding="@dimen/dimens_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_5dp">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimens_120dp" android:text="@string/academic_section"/>
+            <ProgressBar android:id="@+id/pb_academic_section" android:visibility="invisible" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp"/>
+            <academia.bracu.com.academia.spinner.SearchableSpinner android:gravity="center" android:id="@+id/sp_academic_section" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_checkbox_selection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimen_100dp" android:text="@string/select_all" android:textAllCaps="false" style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:gravity="center" android:id="@+id/btn_send_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimen_100dp" android:text="@string/text_notify" android:textAllCaps="false" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:id="@+id/tv_student_list_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="List of students:"/>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/ll_student_list_label" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_padding_8dp" android:paddingStart="@dimen/dimens_5dp" android:paddingEnd="@dimen/dimens_5dp">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30dp"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimens_50dp" android:text="@string/text_id" android:layout_marginStart="@dimen/dimens_5dp"/>
+        <Space android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/dimens_5dp" android:layout_marginStart="@dimen/dimens_5dp" android:layout_marginEnd="@dimen/dimens_5dp"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle" android:ellipsize="end" android:id="@+id/tv_student_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_name" android:maxLines="1" android:paddingStart="@dimen/dimen_20dp"/>
+    </LinearLayout>
+    <ListView android:id="@+id/lv_student_list_details" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dimens_5dp" android:divider="@android:color/transparent" android:dividerHeight="@dimen/dimens_5dp" android:layout_weight="1"/>
+</LinearLayout>

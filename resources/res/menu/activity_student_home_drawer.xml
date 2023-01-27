@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/group_top" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_person_white" android:id="@+id/nav_student_profile" android:title="@string/menu_my_profile"/>
+        <item android:icon="@drawable/ic_schedule" android:id="@+id/nav_student_class_schedule" android:title="@string/class_schedule"/>
+        <item android:icon="@drawable/ic_schedule" android:id="@+id/nav_student_exam_schedule" android:title="@string/exam_schedule"/>
+        <item android:icon="@drawable/ic_received_message" android:id="@+id/nav_student_notifications" android:title="@string/text_notifications"/>
+        <item android:icon="@drawable/ic_notice_white" android:id="@+id/nav_student_notice" android:visible="false" android:title="@string/text_notice"/>
+        <item android:icon="@drawable/ic_library" android:id="@+id/nav_student_advised_course" android:title="@string/advised_courses"/>
+        <item android:icon="@drawable/ic_result_white" android:id="@+id/nav_student_result" android:title="@string/menu_result"/>
+        <item android:icon="@drawable/ic_user_logout" android:id="@+id/nav_student_logout" android:title="@string/text_logout"/>
+    </group>
+    <group android:id="@+id/group_middle" android:checkableBehavior="none">
+        <item android:icon="@drawable/ic_settings" android:id="@+id/nav_common_settings" android:title="@string/action_settings"/>
+    </group>
+    <group android:id="@+id/group_bottom" android:checkableBehavior="none">
+        <item android:icon="@drawable/ic_miscellaneous" android:id="@+id/nav_student_miscellaneous" android:title="@string/text_miscellaneous"/>
+    </group>
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/RelativeLayout01" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:stretchColumns="0,1,2">
+        <ImageView android:id="@+id/others" android:layout_width="30dp" android:layout_height="match_parent" android:layout_column="0" android:paddingStart="10dp"/>
+        <TextView android:layout_gravity="center" android:id="@+id/story" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_column="1" android:text="story" android:paddingStart="10dp"/>
+    </TableRow>
+</RelativeLayout>

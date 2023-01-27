@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/standard_padding_8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_white_100" android:layout_gravity="end" android:background="@drawable/water_color_rect_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/color_white_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimen_100dp" android:text="@string/course_code"/>
+        <TextView android:textColor="@color/color_white_100" android:id="@+id/tv_course_code" android:paddingTop="@dimen/dimen_2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimens_5dp" android:paddingEnd="@dimen/dimen_4dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/color_white_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimen_100dp" android:text="@string/text_room"/>
+        <TextView android:textColor="@color/color_white_100" android:id="@+id/tv_class_room" android:paddingTop="@dimen/dimen_2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimens_5dp" android:paddingEnd="@dimen/dimen_4dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/color_white_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimen_100dp" android:text="@string/text_faculty_name"/>
+        <TextView android:textColor="@color/color_white_100" android:id="@+id/tv_faculty_name" android:paddingTop="@dimen/dimen_2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimens_5dp" android:paddingEnd="@dimen/dimen_4dp"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_white_100" android:layout_gravity="end" android:id="@+id/tv_class_time" android:background="@drawable/water_color_rect_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_5dp"/>
+</LinearLayout>

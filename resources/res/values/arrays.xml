@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="color_timeline_items">
+        <item>#698474</item>
+        <item>#006064</item>
+        <item>#009688</item>
+        <item>#00b8d4</item>
+        <item>#1e88e5</item>
+        <item>#455a64</item>
+        <item>#6e4e2c</item>
+    </array>
+    <array name="miscellaneous_menu_drawables">
+        <item>@drawable/ic_link</item>
+        <item>@drawable/ic_lms</item>
+        <item>@drawable/ic_dspace</item>
+        <item>@drawable/ic_photo</item>
+        <item>@drawable/ic_video</item>
+        <item>@drawable/ic_cafe</item>
+        <item>@drawable/ic_play</item>
+        <item>@drawable/ic_qr</item>
+        <item>@drawable/ic_web</item>
+        <item>@drawable/ic_feedback</item>
+        <item>@drawable/ic_about</item>
+    </array>
+    <array name="miscellaneous_menu_ids">
+        <item>@id/nav_common_links</item>
+        <item>@id/nav_common_lms</item>
+        <item>@id/nav_common_dspace</item>
+        <item>@id/nav_common_photos</item>
+        <item>@id/nav_common_videos</item>
+        <item>@id/nav_common_cafeteria</item>
+        <item>@id/nav_common_bracu_anthem</item>
+        <item>@id/nav_common_qr_reader</item>
+        <item>@id/nav_common_full_website</item>
+        <item>@id/nav_common_feedback</item>
+        <item>@id/nav_common_about</item>
+    </array>
+    <array name="miscellaneous_menu_titles">
+        <item>@string/text_links</item>
+        <item>@string/text_lms</item>
+        <item>@string/text_dspace</item>
+        <item>@string/text_photos</item>
+        <item>@string/text_videos</item>
+        <item>@string/text_cafeteria</item>
+        <item>@string/bracu_anthem</item>
+        <item>@string/qr_reader</item>
+        <item>@string/text_full_website</item>
+        <item>@string/text_feedback</item>
+        <item>@string/text_about</item>
+    </array>
+    <array name="theme_entry_array">
+        <item>light</item>
+        <item>dark</item>
+    </array>
+    <array name="theme_list_array">
+        <item>Light</item>
+        <item>Dark (Recommended)</item>
+    </array>
+</resources>
